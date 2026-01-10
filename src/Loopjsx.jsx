@@ -76,7 +76,7 @@ function Loop(){
         <td>Id</td>
         <td>name</td>
         <td>age</td>
-        <td>emg        </tr>
+        <td>email</tr>
     </thead>
     <tbody>
         {
