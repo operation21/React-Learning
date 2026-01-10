@@ -1,45 +1,52 @@
-import Reusecomp from "./Reusecomp";
+import Nestedloop from "./Nestedloop";
 
 function App() {
-  const userData = [
+  const collegeData = [
     {
-      name: "Anila Sindhu",
-      age: "22",
-      Email: "anil@gmail.com",
-      id: 1
+      name: "IET ALWAR",
+      city: "alwar",
+      website: "www.iet.com",
+      student: [
+        { name: "Rahul", age: 21, email: "rahul@gmail.com" },
+        { name: "Anita", age: 29, email: "anital@gmail.com" },
+        { name: "Ria", age: 27, email: "ria@gmail.com" }
+      ]
     },
     {
-      name: "Sindhu ji",
-      age: "23",
-      Email: "sindhu@gmail.com",
-      id: 2
+      name: "NIET NOIDA",
+      city: "NOIDA",
+      website: "www.niet.com",
+      student: [
+        { name: "Rahul", age: 21, email: "rahul@gmail.com" },
+        { name: "Anita", age: 29, email: "anital@gmail.com" },
+        { name: "Ria", age: 27, email: "ria@gmail.com" }
+      ]
     },
     {
-      name: "shivi",
-      age: "24",
-      Email: "shivi@gmail.com",
-      id: 3
-    },
-    {
-      name: "tanu",
-      age: "25",
-      Email: "tanu@gmail.com",
-      id: 4
+      name: "IET ALWAR",
+      city: "alwar",
+      website: "www.iet.com",
+      student: [
+        { name: "Rahul", age: 21, email: "rahul@gmail.com" },
+        { name: "Anita", age: 29, email: "anital@gmail.com" },
+        { name: "Ria", age: 27, email: "ria@gmail.com" }
+      ]
     }
   ];
 
   return (
     <div>
-      <h1>Reuse Comp in loop</h1>
+      {/* <h1>Nested looping with comp</h1> */}
+     {
+      collegeData.map((college,index)=>(
+        <div Key={index}>
+          <Nestedloop college = {college}/>
+      </div>
+      ))
+     }
 
-      {userData.map((user) => (
-        <h4 key={user.id}>
-          <Reusecomp data ={user}/>
-        </h4>
-      ))}
     </div>
   );
 }
 
 export default App;
-
