@@ -3,7 +3,7 @@ import { useState } from "react";
 function Checked(){
     const [ checkbox , setCheckbox ]=useState([]);
     
-  const handleChange = (event) => {
+  const handleChange = (event) => {  
     const value = event.target.value;
     const checked = event.target.checked;
 
