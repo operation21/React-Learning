@@ -1,15 +1,10 @@
-import { useEffect } from "react";
-import Useeffect from "./Useeffect";
-
+import Inlinecss from "./Inlinecss";
 function App() {
-
- 
-
-  return (
+  return(
     <div>
-      <Useeffect/>
+      <Inlinecss/>
     </div>
   );
-}
 
+}
 export default App;
