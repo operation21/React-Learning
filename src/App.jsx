@@ -1,8 +1,8 @@
-import Inlinecss from "./Inlinecss";
+import './css/style.css'
 function App() {
   return(
     <div>
-      <Inlinecss/>
+      <h1 className='heading'>External Style</h1>
     </div>
   );
 
