@@ -1,9 +1,9 @@
-import Userefhook from './Userefhook';
+import Uncontrolled from "./Uncontrolled";
 
 function App() {
   return (
     <div>
-      <Userefhook />
+    <Uncontrolled/>
     </div>
   );
 }
