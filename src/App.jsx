@@ -1,9 +1,14 @@
-import Uncontrolled from "./Uncontrolled";
+import Functionasprops from "./Functionasprops";
 
 function App() {
+  const displayName = () => {
+    alert("hi");
+  };
+
   return (
     <div>
-    <Uncontrolled/>
+      <h1>Function as props</h1>
+      <Functionasprops displayName={displayName} />
     </div>
   );
 }
