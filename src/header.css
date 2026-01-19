@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e1caca;
+  padding: 20px 40px;
+}
+
+/* THIS IS THE KEY */
+.header ul {
+  display: flex;          /* makes items in one row */
+  list-style: none;       /* removes bullets */
+  gap: 30px;              /* space between Home, Contact, About */
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: purple;
+  font-size: 24px;
+  font-weight: 600;
+}
