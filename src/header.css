@@ -4,11 +4,14 @@
   align-items: center;
   background-color: #e1caca;
   padding: 20px 40px;
+  width: 100%;
 }
+
+
 
 /* THIS IS THE KEY */
 .header ul {
-  display: flex;          /* makes items in one row */
+  display: flex;          
   list-style: none;       /* removes bullets */
   gap: 30px;              /* space between Home, Contact, About */
   margin: 0;
@@ -20,4 +23,14 @@
   color: purple;
   font-size: 24px;
   font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
 }
